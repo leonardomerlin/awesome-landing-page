@@ -266,7 +266,7 @@
                                     <input type="email" name="email" class="form-control" id="idEmail" placeholder="Seu e-mail aqui" required>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-neutral btn-lg btn-fill">Enviar</button>
+                                    <button id="submitBtn" type="submit" class="btn btn-neutral btn-lg btn-fill">Enviar</button>
                                 </div>
                             </form>
                         </div>
@@ -305,9 +305,11 @@
         var $form = $('#formulario');
         $form.submit(function(e) {
             e.preventDefault();
+
+            $("#submitBtn").attr("disabled", true);
             
             var data = $form.serializeArray();
-            var url = 'https://593342d666fd6e0011df0d2c.mockapi.io/api/pesquisa';
+            var url = 'http://593342d666fd6e0011df0d2c.mockapi.io/api/pesquisa';
             // url += '?' + data;
             // debugger;
             $.post(url, {
@@ -315,7 +317,9 @@
                 email: data[1].value
             }, function(result) {
                 console.log('Result:', result);
+                $("#submitBtn").attr("disabled", false);
                 alert('Cadastrado com sucesso! o/');
+
             });
         });
         
