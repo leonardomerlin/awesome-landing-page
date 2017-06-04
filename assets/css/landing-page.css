@@ -1246,7 +1246,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     margin-top: 50px;
     
   }
-    .landing-page .section-testimonial .carousel-inner .item .mask{
+    .landing-page .carousel-inner .item .mask{
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -1256,25 +1256,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
       margin: 0 auto;
     }
 
-   .landing-page .section-testimonial .carousel-inner .item img{
+   .landing-page .carousel-inner .item img{
       width: 100%;
       height: auto;
       display: block;
    }
 
-   .landing-page .section-testimonial .carousel-inner .item .carousel-testimonial-caption{
+   .landing-page .carousel-inner .item .carousel-testimonial-caption{
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
    }
 
-   .landing-page .section-testimonial .carousel-inner  h3{
+   .landing-page .carousel-inner  h3{
     font-weight: 300;
     font-size: 30px;
     line-height: 46px;
    }
 
-   .landing-page .section-testimonial .carousel-inner  p{
+   .landing-page .carousel-inner  p{
     margin-top: 10px;
     color: #9a9a9a;
    }
