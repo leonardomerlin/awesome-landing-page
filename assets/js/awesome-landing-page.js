@@ -27,12 +27,12 @@
 
         });
 
-        $(window).on('scroll', function() {
+        /*$(window).on('scroll', function() {
             responsive = $(window).width();
             if (responsive >= 768) {
-                parallax();
+                //parallax();
             }
-        });
+        });*/
 
         function SelectColor(btn) {
             oldColor = $('.filter-gradient').attr('data-color');
